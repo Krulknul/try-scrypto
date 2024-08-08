@@ -32,7 +32,7 @@ Use `scrypto build` to build the project, or try out `scrypto --help` for more s
 
 ### Exiting the container
 
-To get out of the container, open the command palette again and type "Reopen Foler Locally", to find the command for that. The code is mounted inside the container, so any changes will be persistent.
+To get out of the container, open the command palette again and type "Reopen Folder Locally", to find the command for that. The code is mounted inside the container, so any changes will be persistent.
 
 ### Customizing the image
 
