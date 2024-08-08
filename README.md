@@ -4,7 +4,7 @@ This repository provides a VS Code dev containers configuration with a complimen
 
 For an introduction about working inside of dev containers in VS Code, see the [documentation](https://code.visualstudio.com/docs/devcontainers/containers).
 
-This repository includes the basic "hello" example that is generated when a new package is created with `srypto new-package`. Once you open the project inside the container, you will have the entire Scrypto toolchain available in that isolated environment.
+This repository includes the basic "hello" example that is generated when a new package is created with `scrypto new-package`. Once you open the project inside the container, you will have the entire Scrypto toolchain available in that isolated environment.
 
 # How to use
 
