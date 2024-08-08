@@ -1,8 +1,10 @@
 # try-scrypto
 
-This repository provides a VS Code dev containers configuration with a complimentary Docker image that allows you to quickly try out Scrypto on your machine, without going through its installation steps.
+This repository provides a VS Code dev containers configuration with a complimentary Docker image that allows you to quickly try out Scrypto on your machine, without going through all its installation steps.
 
-It includes the basic "hello" example that is generated when a new package is created with `srypto new-package`
+For an introduction about working inside of dev containers in VS Code, see the [documentation](https://code.visualstudio.com/docs/devcontainers/containers).
+
+This repository includes the basic "hello" example that is generated when a new package is created with `srypto new-package`. Once you open the project inside the container, you will have the entire Scrypto toolchain available in that isolated environment.
 
 # How to use
 
@@ -35,7 +37,3 @@ To get out of the container, open the command palette again and type "Reopen Fol
 ### Customizing the image
 
 The dev container is set up to use a Dockerfile, so it is possible to add more development tools to the environment as you wish.
-
-### More information
-
-For more information about working inside of dev containers in VS Code, see the [documentation](https://code.visualstudio.com/docs/devcontainers/containers).
