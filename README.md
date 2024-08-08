@@ -22,9 +22,9 @@ git clone git@github.com:Krulknul/try-scrypto.git
 code try-scrypto
 ```
 
-3. VS Code might suggest you to open the repository in a dev container. If it does, click "Reopen in container". If it doesn't, open the command palette and type "Reopen in container". Docker might pull the image if it's not yet present and start the container.
+3. VS Code might suggest you to open the repository in a dev container, because of the existing `.devcontainer` config. If it does, click "Reopen in container". Else, open the command palette and type "Reopen in container". Docker might pull the image if it's not yet present and then start the container.
 
-4. Wait for rust-analyzer to finish checking and indexing.
+4. Wait for rust-analyzer to finish checking and indexing. It might take a bit of time before IntelliSense comes alive.
 
 5. Try out Scrypto!
 
