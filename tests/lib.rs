@@ -3,7 +3,7 @@ use scrypto::this_package;
 use scrypto_test::prelude::*;
 use scrypto_unit::*;
 
-use boing::test_bindings::*;
+use hello::test_bindings::*;
 
 #[test]
 fn test_hello() {
@@ -11,7 +11,8 @@ fn test_hello() {
     let mut test_runner = TestRunnerBuilder::new().build();
 
     // Create an account
-    let (public_key, _private_key, account) = test_runner.new_allocated_account();
+    let (public_key, _private_key, account) =
+        test_runner.new_allocated_account();
 
     // Publish package
     let package_address = test_runner.compile_and_publish(this_package!());
@@ -53,7 +54,8 @@ fn test_hello() {
 fn test_hello_with_test_environment() -> Result<(), RuntimeError> {
     // Arrange
     let mut env = TestEnvironment::new();
-    let package_address = Package::compile_and_publish(this_package!(), &mut env)?;
+    let package_address =
+        Package::compile_and_publish(this_package!(), &mut env)?;
 
     let mut hello = Hello::instantiate_hello(package_address, &mut env)?;
 
