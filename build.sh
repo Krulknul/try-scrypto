@@ -1,0 +1,1 @@
+docker buildx build --platform linux/amd64,linux/arm64 -t krulknul/try-scrypto:1.3.0 --push .devcontainer -f .devcontainer/Dockerfile.base
