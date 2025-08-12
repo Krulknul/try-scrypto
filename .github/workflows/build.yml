@@ -6,7 +6,6 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }} # ghcr.io/<owner>/<repo>
   RELEASE_TAG: ${{ github.event.release.tag_name }}
 
 permissions:
@@ -45,6 +44,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.RELEASE_TAG }}
+            ${{ env.REGISTRY }}/krulknul:latest
+            ${{ env.REGISTRY }}/krulknul:${{ env.RELEASE_TAG }}
           labels: ${{ steps.meta.outputs.labels }}
