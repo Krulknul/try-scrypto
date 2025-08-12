@@ -6,7 +6,7 @@ For an introduction about working inside of dev containers in VS Code, see the [
 
 This repository includes the basic "hello" example that is generated when a new package is created with `scrypto new-package`. Once you open the project inside the container, you will have the entire Scrypto toolchain available in that isolated environment.
 
-# How to use
+# How to try out scrypto
 
 You will need to have Docker installed, in addition to the Dev containers extension in VS Code. For instructions on their installation, find their respective documentation pages.
 
@@ -37,3 +37,27 @@ To get out of the container, open the command palette again and type "Reopen Fol
 ### Customizing the image
 
 The dev container is set up to use a Dockerfile, so it is possible to add more development tools to the environment as you wish.
+
+
+# Using this setup for another project
+You can use the dev container here as a full time development environment for your Scrypto projects.
+In your project, set up a simple `.devcontainer/devcontainer.json`:
+```json
+{
+    "name": "Scrypto 1.3.0",
+    "image": "ghcr.io/Krulknul/scrypto:1.3.0",
+    // add some useful extensions you might need
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                "rust-lang.rust-analyzer",
+                "tamasfe.even-better-toml"
+            ]
+        }
+    }
+}
+```
+
+And voila! Use the instructions above to enter the dev container.
+You can extend the image by using your own Dockerfile and starting from the image I published.

@@ -1,5 +1,5 @@
 {
-    "name": "Rust 1.80",
+    "name": "Scrypto",
     "dockerFile": "Dockerfile.base",
     "customizations": {
         "vscode": {
