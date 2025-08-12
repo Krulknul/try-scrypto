@@ -45,7 +45,7 @@ In your project, set up a simple `.devcontainer/devcontainer.json`:
 ```json
 {
     "name": "Scrypto 1.3.0",
-    "image": "ghcr.io/Krulknul/scrypto:1.3.0",
+    "image": "ghcr.io/krulknul/try-scrypto:1.3.0",
     // add some useful extensions you might need
     "customizations": {
         "vscode": {
